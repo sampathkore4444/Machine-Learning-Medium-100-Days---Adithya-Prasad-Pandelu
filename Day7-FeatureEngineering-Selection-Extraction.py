@@ -85,9 +85,12 @@ poly = PolynomialFeatures(degree=2, include_bias=False)
 square_footage_poly = poly.fit_transform(df[["square_footage"]])
 print(square_footage_poly)
 print(square_footage_poly[:, 1])
+df["square_footage_squared"] = square_footage_poly[:, 1]
+print(df)
+
 
 """
-his creates:
+This creates:
 
 Original feature: square_footage (degree 1)
 
