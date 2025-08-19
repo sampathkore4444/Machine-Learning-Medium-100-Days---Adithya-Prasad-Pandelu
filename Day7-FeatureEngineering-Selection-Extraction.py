@@ -90,6 +90,13 @@ print(df)
 
 
 """
+In this example:
+
+rooms_per_sqft provides a new perspective on house size relative to the number of rooms.
+square_footage_squared introduces a polynomial feature, helping capture potential non-linear relationships.
+"""
+
+"""
 This creates:
 
 Original feature: square_footage (degree 1)
